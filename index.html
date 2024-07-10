@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	  <link rel="stylesheet" href="https://unpkg.com/7.css">
     <title>redOS</title>
 	<!-- add icon link -->
     <link rel = "icon" href="favicon.png"
@@ -127,7 +128,14 @@
       <!-- Personalize -->
       <div id="personalize" class="windows draggable">
         <div class="window-menus">
-          <span class="window-titles">Personalize</span>
+           <div class="title-bar">
+    <div class="title-bar-text">A complete window</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize" disabled></button>
+      <button id="personalize-close-button" aria-label="Close"></button>
+    </div>
+  </div>
           <div id="personalize-close-button" class="close-buttons">
             <span class="close-button-contents">×</span>
           </div>
